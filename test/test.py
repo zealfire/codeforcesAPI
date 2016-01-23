@@ -13,7 +13,7 @@ print cd.ratingChanges(374).text
 
 print cd.standings(contestId=374,from=1,count=5,showUnofficial='true').url
 
-checking working of exception API
+#checking working of exception API
 r= cd.standings(contestId=374, count=5, showUnofficial='true')
 
 if(r.status_code != 202):
