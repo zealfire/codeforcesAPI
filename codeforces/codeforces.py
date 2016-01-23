@@ -2,6 +2,7 @@ import requests
 
 class codeforces:
 	def __init__(self):
+		print "hello"
 
 	#Return a list of hack during a specific contest. A list of hack object is
 	#returned
