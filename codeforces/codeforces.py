@@ -2,7 +2,7 @@ import requests
 
 class codeforces:
 	def __init__(self):
-		print "hello"
+		''''''
 
 	#Return a list of hack during a specific contest. A list of hack object is
 	#returned
@@ -25,13 +25,12 @@ class codeforces:
 
 	#Returns the description of the contest.
 	def standings(self, **kwargs):
-		#for key, value in kwargs.iteritems():
-		r = requests.get('http://codeforces.com/api/contest.standings', **kwargs)
+		r = requests.get('http://codeforces.com/api/contest.standings', params=kwargs)
 		return r
 
 	#Returns submission for specified contest.
 	def status(self, **kwargs):
-		r = requests.get(' http://codeforces.com/api/contest.status', **kwargs)
+		r = requests.get(' http://codeforces.com/api/contest.status', params=kwargs)
 		return r
 
 	#Returns all problems from problemsets.
